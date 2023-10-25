@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    
+    <main>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+
+    <div class="mainInfo">
+      <label for="name" id="name-label">Name<input id="name" name="name" type="text" required placeholder="Enter your name"/></label>
+      <label for="email" id="email-label">Email<input id="email" name="email" type="email" required placeholder="Enter your email"/></label>
+      <label for="number" id="number-label">Age (optional) <input id="number" type="number" name="age" min="13" max="120" placeholder="Age"/></label>
+    </div>
+    <div id="select">
+      <h2>Which option best describes your current role?</h2>
+          <select id="dropdown" name="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Other</option>
+          </select>
+      </div>
+
+      <div id="recommend">
+        <h2>Would you recommend freeCodeCamp to a friend?</h2>
+        <label for="def"><input id="deft" type="radio" name="rec" class="inline" checked value="1" /> Definitely</label>
+        <label for="may"><input id="may" type="radio" name="rec" class="inline" value="2" /> Maybe</label>
+        <label for="not"><input id="not" type="radio" name="rec" class="inline" value="3" /> Not sure</label>
+      </div>
+
+      <div id="stackt">
+        <h2>Your stack tecnology:</h2>
+        <label for"jss"><input type="checkbox"  id="js" value="JS" class="zero"/>JS</label>
+        <label for="ts"><input type="checkbox" id="js" value="TS" class="zero"/>TS</label>
+        <label for="python"><input type="checkbox" id="python" value="Python" class="zero"/>Python</label>
+        <label id="php"><input type="checkbox" id="php" value="PHP" class="zero"/>PHP</label>
+      </div>
+
+        <div>
+          <h2>Provide a bio</h2>
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </div>
+          <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </main>
+  </body>
+</html>
